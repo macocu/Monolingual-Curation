@@ -3,7 +3,7 @@
 * space before and after the – sign (em-dash) depends on the context ("1–3 days", "Slovenian–Croatian border" versus "onion – a tool for ..."), the same with the dash ("Lovro Kuhar - Prežihov Voranc" versus "e-poštni naslov"), and the : sign ("Real Madrid : FC Barcelona" versus "onion: a tool for ...")
 
 
-* however, there is never a space on just on side of the dash -->  "grad- bišču" - this is wrong segmentation of the text (found in the diff fil, probably the problem was already on the website), it could be corrected by deleting space if the dash has only space on one side (to "gradbišču") if you decide so
+* however, there is never a space on just on side of the dash -->  "grad- bišču" - this is wrong segmentation of the text (found in the diff file, probably the problem was already on the website), it could be corrected by deleting space if the dash has only space on one side (to "gradbišču") if you decide so
 
 
 **Note**: These rules are advanced grammar rules, there are surely many texts written by Slovene native speakers where for instance the three dots are written without the space.
@@ -28,7 +28,7 @@ Additional Slovene-specific rules (if you are doing anything with that):
 I have noticed that in some instances, "ÄŤ" is changed to "č" (and similarly with other patterns) and in others examples it is not (see examples below).
 
 Examples:
-*< " In ko je bila ravno na tem, da me ubije s pogledom, sem ji rekel Ĺˇe: "Mar me ne moreĹˇ ljubiti takĹˇnega kot sem, in ne zaradi stvari, ki ti jih kupujem?" Se mi je kar zdelo, da oÄŤitno tudi nocoj ne bo niÄŤ s seksom!
+* < " In ko je bila ravno na tem, da me ubije s pogledom, sem ji rekel Ĺˇe: "Mar me ne moreĹˇ ljubiti takĹˇnega kot sem, in ne zaradi stvari, ki ti jih kupujem?" Se mi je kar zdelo, da oÄŤitno tudi nocoj ne bo niÄŤ s seksom!
 ---
   " In ko je bila ravno na tem, da me ubije s pogledom, sem ji rekel še: "Mar me ne moreš ljubiti takšnega kot sem, in ne zaradi stvari, ki ti jih kupujem?" Se mi je kar zdelo, da oÄŤitno tudi nocoj ne bo niÄŤ s seksom!
  
