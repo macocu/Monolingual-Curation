@@ -21,6 +21,6 @@ TO DO (January 28)
     * disable hard rules, calculate quality scores (scores for fluency) for paragraph level (do the processing on the paragraphs as if they are sentences)
 * we want labels also for sentences -> do the processing again on sentences
 * final format for monolingual data (to be discussed with the macocu group after it’s produced):    vertical format (kind of XML), remove the metadata from prevert format (langdiff, cfclass), two separate files:
-    * with metadata for each paragraph (<p>)
-    * with metadata for sentence elements (<s>)
+    * with metadata for each paragraph (\<p>)
+    * with metadata for sentence elements (\<s>)
 
