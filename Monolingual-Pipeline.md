@@ -11,16 +11,3 @@ What Monocleaner does:
 * discards sentences based on hard rules (Regex): if they are too short, if they are not in the target language (if FastText doesn’t identify the target language), if there are URLs
 * if the sentences pass the rules, it calculates the score for quality for each sentence
 
-## Changes to the pipeline
-
-TO DO (January 28)
-* improve sentence splitting rules (prof.)
-* Taja will prepare Slovene-specific rules for Monofixor (don’t remove spaces before three dots), examples of missed UTF mappings (š,č,ž)
-* Monofixer will be ran again, just without removing spaces, then we will check the diff again
-* we would rather process on paragraph level (also language identification)
-    * disable hard rules, calculate quality scores (scores for fluency) for paragraph level (do the processing on the paragraphs as if they are sentences)
-* we want labels also for sentences -> do the processing again on sentences
-* final format for monolingual data (to be discussed with the macocu group after it’s produced):    vertical format (kind of XML), remove the metadata from prevert format (langdiff, cfclass), two separate files:
-    * with metadata for each paragraph (\<p>)
-    * with metadata for sentence elements (\<s>)
-
