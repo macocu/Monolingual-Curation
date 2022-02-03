@@ -37,7 +37,7 @@ Wrong segmentation (originating from the websites):
  "Da" je lahko na- pačen, a ta ne zmanjša moje vrednosti in spoštovanja, ki sem ga dolžan sebi.
  "Da" je lahko trden v večji ali manjši meri.Odvisno od vsebine stvarnosti,za- radi katere je izrečen.
 
-*6178c6179
+* 6178c6179
 < "Da" nima ena- ke teĹľe, ÄŤe potrjuje sodelovanju pri hiĹˇni zabavi, ali pa ÄŤe je potrditev zvestobe pri poroki.
 ---
  "Da" nima ena- ke teže, če potrjuje sodelovanju pri hišni zabavi, ali pa če je potrditev zvestobe pri poroki.
