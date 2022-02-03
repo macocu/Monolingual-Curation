@@ -25,9 +25,8 @@ Additional Slovene-specific rules (if you are doing anything with that):
 < "Daj no Viv, boÅ¡ rekla, da si zagnala tak vik in krik za njegovo reÅ¡itev kar tako, seveda ne, Äe ga ne bi ljubila bi ti bilo prav figo mar, kaj se dogaja z njim.
 ---
  "Daj no Viv, boš rekla, da si zagnala tak vik in krik za njegovo rešitev kar tako, seveda ne, Äe ga ne bi ljubila bi ti bilo prav figo mar, kaj se dogaja z njim.
- (**here, we would need to change all Ä with č, which can be a bit tricky, not sure whether it's a good idea to change that, but mentioning it just in case**)
 
-
+(here, we would need to change all Ä with č, which can be a bit tricky, not sure whether it's a good idea to change that, but mentioning it just in case)
 
 Wrong segmentation (originating from the websites):
 6173,6174c6174,6175
