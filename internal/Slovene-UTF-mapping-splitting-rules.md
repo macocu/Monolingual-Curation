@@ -29,6 +29,7 @@ Additional Slovene-specific rules (if you are doing anything with that):
 (here, we would need to change all Ä with č, which can be a bit tricky, not sure whether it's a good idea to change that, but mentioning it just in case)
 
 Wrong segmentation (originating from the websites):
+
 6173,6174c6174,6175
 < "Da" je lahko na- paÄŤen, a ta ne zmanjĹˇa moje vrednosti in spoĹˇtovanja, ki sem ga dolĹľan sebi.
 < "Da" je lahko trden v veÄŤji ali manjĹˇi meri.Odvisno od vsebine stvarnosti,za- radi katere je izreÄŤen.
