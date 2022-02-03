@@ -2,10 +2,6 @@
 * there is a space before the three dots (...)
 * space before and after the – sign (em-dash) depends on the context ("1–3 days", "Slovenian–Croatian border" versus "onion – a tool for ..."), the same with the dash ("Lovro Kuhar - Prežihov Voranc" versus "e-poštni naslov"), and the : sign ("Real Madrid : FC Barcelona" versus "onion: a tool for ...")
 
-
-* however, there is never a space on just on side of the dash -->  "grad- bišču" - this is wrong segmentation of the text (found in the diff file, probably the problem was already on the website), it could be corrected by deleting space if the dash has only space on one side (to "gradbišču") if you decide so
-
-
 **Note**: These rules are advanced grammar rules, there are surely many texts written by Slovene native speakers where for instance the three dots are written without the space.
 
 Additional Slovene-specific rules (if you are doing anything with that):
