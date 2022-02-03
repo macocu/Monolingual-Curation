@@ -14,6 +14,34 @@ Additional Slovene-specific rules (if you are doing anything with that):
 
 # Examples of missed UTF mapping (š, č, ž)
 
+**UPDATE**
+99.9% of the instances were correctly mapped. I only find the following missed UTF mapping: {"ЕЎ": "š"}
+* 5777c5778
+< "Cilji so uvrstitev med ЕЎtiri najboljЕЎe dvojice in potem vidimo, kako bo ЕЎlo naprej.
+---
+"Cilji so uvrstitev med EЎtiri najboljEЎe dvojice in potem vidimo, kako bo EЎlo naprej.
+
+* 6285c6286
+< "Daj no Viv, boÅ¡ rekla, da si zagnala tak vik in krik za njegovo reÅ¡itev kar tako, seveda ne, Äe ga ne bi ljubila bi ti bilo prav figo mar, kaj se dogaja z njim.
+---
+ "Daj no Viv, boš rekla, da si zagnala tak vik in krik za njegovo rešitev kar tako, seveda ne, Äe ga ne bi ljubila bi ti bilo prav figo mar, kaj se dogaja z njim.
+ (**here, we would need to change all Ä with č, which can be a bit tricky, not sure whether it's a good idea to change that, but mentioning it just in case**)
+
+
+
+Wrong segmentation (originating from the websites):
+6173,6174c6174,6175
+< "Da" je lahko na- paÄŤen, a ta ne zmanjĹˇa moje vrednosti in spoĹˇtovanja, ki sem ga dolĹľan sebi.
+< "Da" je lahko trden v veÄŤji ali manjĹˇi meri.Odvisno od vsebine stvarnosti,za- radi katere je izreÄŤen.
+---
+ "Da" je lahko na- pačen, a ta ne zmanjša moje vrednosti in spoštovanja, ki sem ga dolžan sebi.
+ "Da" je lahko trden v večji ali manjši meri.Odvisno od vsebine stvarnosti,za- radi katere je izrečen.
+6178c6179
+< "Da" nima ena- ke teĹľe, ÄŤe potrjuje sodelovanju pri hiĹˇni zabavi, ali pa ÄŤe je potrditev zvestobe pri poroki.
+---
+ "Da" nima ena- ke teže, če potrjuje sodelovanju pri hišni zabavi, ali pa če je potrditev zvestobe pri poroki.
+
+
 ```
 {
     "ÄŤ": "č",
