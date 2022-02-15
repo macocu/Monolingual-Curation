@@ -11,13 +11,14 @@ Additional Slovene-specific rules (if you are doing anything with that):
 # Examples of missed UTF mapping (š, č, ž)
 
 **UPDATE**
-99.9% of the instances were correctly mapped. I only find the following missed UTF mapping: {"ЕЎ": "š"}
+Problem solved.
 
 ```
 {
     "ÄŤ": "č",
     "ĹĄ":"š",
     "Ĺ ":"š",
+    "ЕЎ": "š"
     "Ĺľ": "ž",
     "Ĺˇ": "ž",
     "Ĺž": "ž",
