@@ -16,7 +16,7 @@ List of missed UTF mappings updated (March 1, 2022)
 ```
 {
     "ÄŤ": "č",
-    "ДЌj": "č",
+    "ДЌ": "č",
     "ĹĄ":"š",
     "Ĺ ":"š",
     "ЕЎ": "š",
