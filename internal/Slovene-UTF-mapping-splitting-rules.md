@@ -8,17 +8,18 @@ Additional Slovene-specific rules (if you are doing anything with that):
 * there is a space before metric system unit abbreviations and other symbols (1 m, 1 €, 1 km/h, 1 + 1 = 2)
 * comma and dot in numbers are used differently than in English (1.000 for thousand and 1,3 for decimal numbers)
 
-# Examples of missed UTF mapping (š, č, ž)
+# Missed UTF mapping (š, č, ž)
 
 **UPDATE**
-Problem solved.
+List of missed UTF mappings updated (March 1, 2022)
 
 ```
 {
     "ÄŤ": "č",
+    "ДЌj": "č",
     "ĹĄ":"š",
     "Ĺ ":"š",
-    "ЕЎ": "š"
+    "ЕЎ": "š",
     "Ĺľ": "ž",
     "Ĺˇ": "ž",
     "Ĺž": "ž",
