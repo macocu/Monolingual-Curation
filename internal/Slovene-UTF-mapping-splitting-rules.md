@@ -26,6 +26,7 @@ List of missed UTF mappings updated (March 1, 2022)
     "Ĺ˝": "Ž"
 }
 ```
+### Previous issues (solved)
 **I have noticed that in some instances, "ÄŤ" is changed to "č" (and similarly with other patterns) and in others examples it is not (see examples below).**
 
 Examples:
