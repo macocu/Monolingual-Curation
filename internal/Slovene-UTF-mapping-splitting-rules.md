@@ -11,20 +11,23 @@ Additional Slovene-specific rules (if you are doing anything with that):
 # Missed UTF mapping (š, č, ž)
 
 **UPDATE**
-List of missed UTF mappings updated (March 23, 2022)
+List of missed UTF mappings updated (March 29, 2022)
 
 ```
 {
     "ÄŤ": "č",
     "ДЌ": "č",
+    "Д‡": "ć",
     "ÄŚ": "Č",
     "ĹĄ": "š",
     "ЕЎ": "š",
     "Ĺˇ": "š",
+    "Å¡": "š",
     "Ĺ ": "Š",
     "Ĺľ": "ž",
     "Ĺž": "ž",
-    "Ĺ˝": "Ž"
+    "Ĺ˝": "Ž",
+    "Å3⁄4": "ž",
 }
 ```
 ### Previous issues (solved)
