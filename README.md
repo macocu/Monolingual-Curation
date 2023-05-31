@@ -16,7 +16,7 @@ This documentation covers the 1. and 3. step of the pipeline:  [Data Preparation
 The repository consists of:
 - `README.md`: main documentation on monolingual data collection and curation
 - [`scripts`](scripts): scripts, used in step 3 of the pipeline - post-processing curation
-- some additional information about the curation: [`merging-data.md`](`merging-data.md`) (merging data for the same language from two crawling batches), [`prevertical-format-validator.md`](`prevertical-format-validator.md`) (documentation on validation of the prevertical format)
+- some additional information about the curation: [`merging-data.md`](merging-data.md) (merging data for the same language from two crawling batches), [`prevertical-format-validator.md`](prevertical-format-validator.md) (documentation on validation of the prevertical format)
 - `additional-documentation`:
     - [`Slovene-UTF-encoding-issues-mapping.md`](additional-documentation/Slovene-UTF-encoding-issues-mapping.md): a list of mappings of Slovene UTF encoding errors, which was integrated to the Monotextor tool
     - [`SouthSlavic-bad-domains-list.txt`](additional-documentation/Slovene-UTF-encoding-issues-mapping.md): a list of domains, discovered to be of low quality based on a manual check-up (see [the manual check-up annotation guidelines](https://github.com/macocu/Manual-Checking-Web-Corpora-Guidelines)) and removed from Slovene, Croatian, Serbian, Bosnian and Montenegrin corpora
