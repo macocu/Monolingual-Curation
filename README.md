@@ -4,7 +4,7 @@ The Repository for the Curation of Monolingual Data work package
 For the initial overview of the tools, used in MaCoCu project, see the [Documentation](https://github.com/macocu/documentation) repository.
 
 The pipeline for creation and curation of monolingual MaCoCu corpora:
-1. crawling and some pre-processing: see [MaCoCu crawler](https://github.com/macocu/MaCoCu-crawler) repository for details on crawling. Main details on the pre-processing in this steps are included in this document, in section [Data Preparation and Filtering before the Monotextor and Bitextor pipelines](#data-preparation-and-filtering-before-the-monotextor-and-bitextor-pipelines)
+1. crawling and some pre-processing: see [MaCoCu crawler](https://github.com/macocu/MaCoCu-crawler) repository for details on crawling. Main details on the pre-processing in these steps are included in this document, in section [Data Preparation and Filtering before the Monotextor and Bitextor pipelines](#data-preparation-and-filtering-before-the-monotextor-and-bitextor-pipelines)
 2. applying Monotextor pipelines - cleaning crawled data (removing encoding errors) and applying a better language identification (Monotextor), and detecting disfluent sentences (Monocleaner): see the [Monotextor](https://github.com/bitextor/monotextor/) and [Monocleaner](https://github.com/bitextor/monocleaner) repositories - more specifically, [this version of Monotextor](https://github.com/bitextor/monotextor/releases/tag/v1.0) was used for the release of MaCoCu corpora
 3. additional curation of data: see section [Post-processing-curation (after the Monotextor pipeline)](#post-processing-curation-after-the-monotextor-pipeline).
 4. Conversion to the XML format, which can be queried with the [prevert iterator](https://pypi.org/project/prevert/), available as a python package.
@@ -15,13 +15,13 @@ This documentation covers the 1. and 3. step of the pipeline:  [Data Preparation
 
 The repository consists of:
 - `README.md`: main documentation on monolingual data collection and curation
-- `scripts`: scripts, used in step 3 of the pipeline - post-processing curation
-- some additional information about the curation: `merging-data.md` (merging data for the same language from two crawling batches), `prevertical-format-validator.md` (documentation on validation of the prevertical format)
+- [`scripts`](scripts): scripts, used in step 3 of the pipeline - post-processing curation
+- some additional information about the curation: [`merging-data.md`](`merging-data.md`) (merging data for the same language from two crawling batches), [`prevertical-format-validator.md`](`prevertical-format-validator.md`) (documentation on validation of the prevertical format)
 - `additional-documentation`:
-    - `Slovene-UTF-encoding-issues-mapping.md`: a list of mappings of Slovene UTF encoding errors, which was integrated to the Monotextor tool
-    - `SouthSlavic-bad-domains-list.txt`: a list of domains, discovered to be of low quality based on a manual check-up (see [the manual check-up annotation guidelines](https://github.com/macocu/Manual-Checking-Web-Corpora-Guidelines)) and removed from Slovene, Croatian, Serbian, Bosnian and Montenegrin corpora
-    - `list-porn-domains-sl.json`, `additional-documentation/list-porn-domains-hbs.json`: list of porn domains in Slovene and Croatian-Serbian-Bosnian corpora, automatically identified (see script `scripts/porn-identifier/4-porn_identifier_final.py`)
-    - `manual-checkup-report.md`: report on the results of a manual check-up of Slovene and Croatian web corpus (in release 1)
+    - [`Slovene-UTF-encoding-issues-mapping.md`](additional-documentation/Slovene-UTF-encoding-issues-mapping.md): a list of mappings of Slovene UTF encoding errors, which was integrated to the Monotextor tool
+    - [`SouthSlavic-bad-domains-list.txt`](additional-documentation/Slovene-UTF-encoding-issues-mapping.md): a list of domains, discovered to be of low quality based on a manual check-up (see [the manual check-up annotation guidelines](https://github.com/macocu/Manual-Checking-Web-Corpora-Guidelines)) and removed from Slovene, Croatian, Serbian, Bosnian and Montenegrin corpora
+    - [`list-porn-domains-sl.json`](additional-documentation/list-porn-domains-sl.json), [`list-porn-domains-hbs.json`](additional-documentation/list-porn-domains-hbs.json): list of porn domains in Slovene and Croatian-Serbian-Bosnian corpora, automatically identified (see script `scripts/porn-identifier/4-porn_identifier_final.py`)
+    - [`manual-checkup-report.md`](additional-documentation/manual-checkup-report.md): report on the results of a manual check-up of Slovene and Croatian web corpus (in release 1)
 
 ## Data Preparation and Filtering before the Monotextor and Bitextor pipelines
 
