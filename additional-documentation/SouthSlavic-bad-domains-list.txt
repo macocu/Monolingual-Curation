@@ -1,0 +1,185 @@
+Web domain	Issue	Source corpus
+machineseeker.hr	machine translation	Croatian (year 1)
+mi.warbletoncouncil.org	foreign languages	Croatian (year 1)
+haw.warbletoncouncil.org	foreign languages	Croatian (year 1)
+bs.warbletoncouncil.org	machine translation	Croatian (year 1)
+hr.eferrit.com	machine translation	Croatian (year 1)
+game-game.com.hr	machine translation	Croatian (year 1)
+hr.strephonsays.com	machine translation	Croatian (year 1)
+haw.evidentista.org	foreign languages	Croatian (year 1)
+hr.weblogographic.com	machine translation	Croatian (year 1)
+moforaja.com	encoding issues	Croatian (year 1)
+m.baibala.org	foreign languages	Croatian (year 1)
+map.com.hr	"machine translation, non-textual, generated text"	Croatian (year 1)
+ha.warbletoncouncil.org	machine translation	Croatian (year 1)
+mi.evidentista.org	foreign languages	Croatian (year 1)
+bs.evidentista.org	machine translation	Croatian (year 1)
+yurope.com	encoding issues	Croatian (year 1)
+ha.evidentista.org	foreign languages	Croatian (year 1)
+hr.evidentista.org	machine translation	Croatian (year 1)
+en.bharatdiscovery.org	foreign languages	Croatian (year 1)
+storyboardthat.com	machine translation	Croatian (year 1)
+hr.ovalengineering.com	machine translation	Croatian (year 1)
+hr.odisseialiteraria.com	machine translation	Croatian (year 1)
+aozeljeznicar.hr	encoding issues	Croatian (year 1)
+fontovi.gifmania.com.hr	"non-textual, generated"	Croatian (year 1)
+crnakutija.babe.hr	machine translation	Croatian (year 1)
+hrv.beashandmade.com	machine translation	Croatian (year 1)
+uspdr-delta.hr	encoding issues	Croatian (year 1)
+yo.warbletoncouncil.org	machine translation	Croatian (year 1)
+sciencedocbox.com	non-textual	Croatian (year 1)
+hr.wpcbh.org	machine translation	Croatian (year 1)
+hr.goldavelez.com	machine translation	Croatian (year 1)
+hr.hiloved.com	machine translation	Croatian (year 1)
+hr.aroundtravels.com	machine translation	Croatian (year 1)
+hr.10steps.org	machine translation	Croatian (year 1)
+ig.warbletoncouncil.org	machine translation	Croatian (year 1)
+hr.energymedresearch.com	machine translation	Croatian (year 1)
+sw.warbletoncouncil.org	machine translation	Croatian (year 1)
+hr.ncmhcso.org	machine translation	Croatian (year 1)
+hr.livingorganicnews.com	machine translation	Croatian (year 1)
+hr.istanbulbear.org	machine translation	Croatian (year 1)
+hr.drderamus.com	machine translation	Croatian (year 1)
+bs.ncmhcso.org	machine translation	Croatian (year 1)
+hr.decorexpro.com	machine translation	Croatian (year 1)
+hr.wvpt4learning.org	machine translation	Croatian (year 1)
+hr.iliveok.com	machine translation	Croatian (year 1)
+hr.smiley-site.com	machine translation	Croatian (year 1)
+hr.culture-today.com	machine translation	Croatian (year 1)
+hr.nutritionatyourfingertips.com	machine translation	Croatian (year 1)
+hr.puntomarinero.com	machine translation	Croatian (year 1)
+bs.eferrit.com	machine translation	Croatian (year 1)
+hr.blablacams.com	machine translation	Croatian (year 1)
+sw.evidentista.org	foreign languages	Croatian (year 1)
+zgodbice.net	encoding issues	Slovene
+ht.warbletoncouncil.org	foreign language	Slovene
+ht.evidentista.org	foreign language	Slovene
+sl.tierient.com	machine translation	Slovene
+bambusoveslamice.si	machine translation	Slovene
+virs-primorske.si	machine translation	Slovene
+sl.gadget-info.com	machine translation	Slovene
+sl.brictly.com	machine translation	Slovene
+sl.warbletoncouncil.org	machine translation	Slovene
+sl.asayamind.com	machine translation	Slovene
+sl.eferrit.com	machine translation	Slovene
+sl.strephonsays.com	machine translation	Slovene
+mali-vragci.si	machine translation	Slovene
+sl.digitalentertainmentnews.com	machine translation	Slovene
+game-game.si	machine translation	Slovene
+sl.iliveok.com	machine translation	Slovene
+slv.line-magazine.com	machine translation	Slovene
+sl.puntomarinero.com	machine translation	Slovene
+rojstna-karta.si	machine translation	Slovene
+apartmaji-hrvaska.si	machine translation	Slovene
+gifmania.si	machine translation	Slovene
+sl.emoneyo.com	machine translation	Slovene
+sl.albertolamaphotography.com	machine translation	Slovene
+bigshop.si	machine translation	Slovene
+sl.food-of-dream.com	machine translation	Slovene
+sl.modasefa.info	machine translation	Slovene
+sl.vomturmhaus.com	machine translation	Slovene
+sl.stilmoda.info	machine translation	Slovene
+sl.wpcbh.org	machine translation	Slovene
+sl.fredtvshow.com	machine translation	Slovene
+privatapartmajihrvaska.si	machine translation	Slovene
+sex-trgovina.si	"machine translation, English"	Slovene
+mascus.si	"machine translation, foreign languages, generated text"	Slovene
+ustavimokorono.si	"machine translation, non-textual"	Slovene
+interadesign.si	"machine translation, non-textual"	Slovene
+student-tomi.si	"machine translation, non-textual"	Slovene
+adriatic.hr	"machine translation, some foreign language"	Slovene
+weblinkpedia.com	non-textual	Slovene
+truck1.si	non-textual	Slovene
+edumatics.eu	porn	Slovene
+ellanet.eu	porn	Slovene
+ktswire.eu	porn	Slovene
+thekingandi.eu	porn	Slovene
+manutenservice.eu	porn	Slovene
+jobsuey.eu	porn	Slovene
+edugov.eu	porn	Slovene
+nimik.eu	porn	Slovene
+crossgame.eu	porn	Slovene
+nonformalopendoors.eu	porn	Slovene
+basama.eu	porn	Slovene
+fp7-mode.eu	porn	Slovene
+schminkspiegel.eu	porn	Slovene
+bedrijfsuitjescheveningen.eu	porn	Slovene
+jujutsu-styria.eu	porn	Slovene
+euregio-loft.eu	porn	Slovene
+weshareasea.eu	porn	Slovene
+agroskill.eu	porn	Slovene
+alagonia.eu	porn	Slovene
+synapcity.eu	porn	Slovene
+inchirieri-masini.eu	porn	Slovene
+droneconsulting.eu	porn	Slovene
+k35.eu	porn	Slovene
+svensklapphund.eu	porn	Slovene
+rodinnaporadna.eu	porn	Slovene
+wasserprofi.eu	porn	Slovene
+reality-myjava.eu	porn	Slovene
+theinvitational.eu	porn	Slovene
+serviceboerse.eu	porn	Slovene
+dyvyne.eu	porn	Slovene
+tothelighthouse.eu	porn	Slovene
+zcgart-wycena.eu	porn	Slovene
+digital-crhed.eu	porn	Slovene
+swissgoldplan.eu	porn	Slovene
+proshots.eu	porn	Slovene
+spolekmyslivcu-fld.eu	porn	Slovene
+yachtandtravel.eu	porn	Slovene
+kurtvonnegutcorner.eu	porn	Slovene
+kizuna-design.eu	porn	Slovene
+fairbau.eu	porn	Slovene
+ednax.eu	porn	Slovene
+feuerwehr-klingenberg.eu	porn	Slovene
+mobile3dtv.eu	porn	Slovene
+hegetschweiler.eu	porn	Slovene
+ilrisparmio.eu	porn	Slovene
+musictelevisionmaker.eu	porn	Slovene
+farbe-licht-raum.eu	porn	Slovene
+okwebsites.eu	porn	Slovene
+domoenergytics.eu	porn	Slovene
+nimic.eu	porn	Slovene
+sejour-ardennes.eu	porn	Slovene
+prowald.eu	porn	Slovene
+unionedemocratica.eu	porn	Slovene
+ecultvalue.eu	porn	Slovene
+mironofshow.eu	porn	Slovene
+reishiinsel.eu	porn	Slovene
+taofengshui.eu	porn	Slovene
+casainteligenta.eu	porn	Slovene
+renegadesaints.eu	porn	Slovene
+edafmis.eu	porn	Slovene
+ragehockey.eu	porn	Slovene
+fambeat.eu	porn	Slovene
+essealcubo.eu	porn	Slovene
+profi-store.eu	porn	Slovene
+pchvn.eu	porn	Slovene
+healthfromnature.eu	porn	Slovene
+dierdonk.eu	porn	Slovene
+cyclovet.eu	porn	Slovene
+green-catering.eu	porn	Slovene
+autobazar-autobazary.eu	porn	Slovene
+artgr.eu	porn	Slovene
+cobratis.eu	porn	Slovene
+ekosense.eu	porn	Slovene
+solarbotanic.eu	porn	Slovene
+svareci-technika.eu	porn	Slovene
+5volt.eu	porn	Slovene
+hotelamflugplatz.eu	porn	Slovene
+verkoudheid.eu	porn	Slovene
+g-and-t.eu	porn	Slovene
+agamky.eu	porn	Slovene
+webfischer.eu	porn	Slovene
+kasteeldeschaffelaar.eu	porn	Slovene
+eskills4einclusion.eu	porn	Slovene
+reality-malacky.eu	porn	Slovene
+euglobal.eu	porn	Slovene
+brain-vision.eu	porn	Slovene
+gite-lamothe.eu	porn	Slovene
+hotdex.eu	porn	Slovene
+chicaboo.eu	porn	Slovene
+hr-m.iliveok.com	machine translation	BCSM (year 2)
+icdself.com	machine translation	BCSM (year 2)
+bs.everaoh.com	machine translation	BCSM (year 2)
+mnemedicaltourism.me	porn	BCSM (year 2)
