@@ -51,13 +51,12 @@ Documents with good paragraphs, still in the prevertical format -- target `preve
 3. Documents less similar to sample data in the language identified by the trigram model than 3 % are removed. (This should deal with paragraphs containing some the majority of foreign or nonsense characters together with some ok text.)
 4. Only good paragraphs (marked by tool [Justext](https://corpus.tools/wiki/Justext) by attribute class="good") are kept.
 5. The language of documents and paragraphs is identified using CLD2. See [Language Identification](#filtering-based-on-language-identification) for more details.
-6. The prevertical is validated at this stage. See [Prevertical format validator](#prevertical-format-validator) for more details.
+6. The prevertical is validated at this stage. See [Prevertical format validator](prevertical-format-validator.md) for more details.
 **The result data after all steps above is sent to Bitextor for further bilingual processing.**
 
 Notes:
 - Near-duplicates were left in the data at this stage since bilingual processing may need to select translations from the near-duplicate data too.
 - Texts in all target languages (i.e. CSBM and English for CSBM data; Albanian and English for Albanian data; etc.) were kept since all target languages are needed for the bilingual output through the bilingual processing.
-- We collected data for Slovene, Serbo-Croatian and Icelandic in both crawling batches. See [merging-data.md](merging-data.md) for details on we merged the data from the two batches, before applying any cleaning procedures.
 
 ### Additional data cleaning before the Monotextor pipeline (only for monolingual corpora)
 
@@ -127,7 +126,7 @@ sed -r -e 's#\[(image|img)[^]]*\].{0,300}\[/\1[^]]*\]##gi' \
 
 ## Post-processing Curation (after the Monotextor pipeline)
 
-The entire pipeline with exact steps to follow and the output files is described [here](scripts/README.md).
+The entire pipeline with exact steps to follow and the output files is described [in the README inside the scripts directory](scripts/README.md).
 
 Steps (outline):
 - create a prevert file from the monotextor file and filter out some data (like short texts - see more below)
