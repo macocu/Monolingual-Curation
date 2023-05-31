@@ -6,18 +6,21 @@ For the initial overview of the tools, used in MaCoCu project, see the [Document
 The pipeline for creation and curation of monolingual MaCoCu corpora:
 1. crawling and some pre-processing: see [MaCoCu crawler](https://github.com/macocu/MaCoCu-crawler) repository for details on crawling. Main details on the pre-processing in this steps are included in this document, in section [Data Preparation and Filtering before the Monotextor and Bitextor pipelines](#data-preparation-and-filtering-before-the-monotextor-and-bitextor-pipelines)
 2. applying Monotextor pipelines - cleaning crawled data (removing encoding errors) and applying a better language identification (Monotextor), and detecting disfluent sentences (Monocleaner): see the [Monotextor](https://github.com/bitextor/monotextor/) and [Monocleaner](https://github.com/bitextor/monocleaner) repositories - more specifically, [this version of Monotextor](https://github.com/bitextor/monotextor/releases/tag/v1.0) was used for the release of MaCoCu corpora
-3. additional curation of data: see section [Post-processing-curation]().
+3. additional curation of data: see section [Post-processing-curation (after the Monotextor pipeline)](#post-processing-curation-after-the-monotextor-pipeline).
 4. Conversion to the XML format, which can be queried with the [prevert iterator](https://pypi.org/project/prevert/), available as a python package.
 
-This documentation covers the 1. and 3. step of the pipeline.
+See [final-format.md](final-format.md) for details on the final files structure and attributes.
+
+This documentation covers the 1. and 3. step of the pipeline:  [Data Preparation and Filtering before the Monotextor and Bitextor pipelines](#data-preparation-and-filtering-before-the-monotextor-and-bitextor-pipelines) and [Post-processing-curation (after the Monotextor pipeline)](#post-processing-curation-after-the-monotextor-pipeline).
 
 The repository consists of:
 - `README.md`: main documentation on monolingual data collection and curation
 - `scripts`: scripts, used in step 3 of the pipeline - post-processing curation
 - some additional information about the curation: `merging-data.md` (merging data for the same language from two crawling batches), `prevertical-format-validator.md` (documentation on validation of the prevertical format)
-- additional-documentation:
+- `additional-documentation`:
     - `Slovene-UTF-encoding-issues-mapping.md`: a list of mappings of Slovene UTF encoding errors, which was integrated to the Monotextor tool
     - `SouthSlavic-bad-domains-list.txt`: a list of domains, discovered to be of low quality based on a manual check-up (see [the manual check-up annotation guidelines](https://github.com/macocu/Manual-Checking-Web-Corpora-Guidelines)) and removed from Slovene, Croatian, Serbian, Bosnian and Montenegrin corpora
+    - `list-porn-domains-sl.json`, `additional-documentation/list-porn-domains-hbs.json`: list of porn domains in Slovene and Croatian-Serbian-Bosnian corpora, automatically identified (see script `scripts/porn-identifier/4-porn_identifier_final.py`)
     - `manual-checkup-report.md`: report on the results of a manual check-up of Slovene and Croatian web corpus (in release 1)
 
 ## Data Preparation and Filtering before the Monotextor and Bitextor pipelines
@@ -29,7 +32,6 @@ The repository consists of:
 4. The tokenized data from the previous step is indexed by corpus manager Sketch Engine to allow manual inspection of the data, looking at the list of most frequent words and instances from the most frequent domains. Samples of the prevertical files are inspected too.
 5. The prevertical data after step 2 is sent to Bitextor for further bilingual processing. The prevertical data after step 3 is sent to Monotextor for further monolingual processing.
 6. Since additional Slovene data was found in crawl batch 2 and since Croatian is quite similar to Serbian, Slovene and Serbo-Croatian data from batch 1 (crawled in 2021) was merged with Slovene and Serbo-Croatian from batch 2 (crawled in 2022). See [merging-data.md](merging-data.md) for more details.
-
 
 ### Data cleaning before both Mono-/Bitextor pipelines (both monolingual and bilingual corpora)
 
@@ -122,6 +124,38 @@ sed -r -e 's#\[(image|img)[^]]*\].{0,300}\[/\1[^]]*\]##gi' \
   - everything between `{{` and `}}` removed (e.g. `{{item_ratings['val' + i]}})`)
   - case insensitive search
 - HTML entitites unescaped with `html.unescape()`
+
+## Post-processing Curation (after the Monotextor pipeline)
+
+The entire pipeline with exact steps to follow and the output files is described [here](scripts/README.md).
+
+Steps (outline):
+- create a prevert file from the monotextor file and filter out some data (like short texts - see more below)
+- transform the prevert format into XML and validate it
+
+### Data filtering
+
+#### Document-level
+
+- documents consisting only of `quality="short"` paragraphs removed
+- documents with "&diff=" or "action=edit" in the URL (documents with Wiki Markup) removed
+- documents with the non-target language as the predominant language (non-target language is in the first position in the `lang_distr` attribute; distribution is calculated based on the language detected in all non-short paragraphs - we chose non-short paragraphs instead of only good paragraphs because some documents might have no "good" paragraphs) removed. Allowed languages are the main languages of the corpora (SL: "sl", HBS: "hbs_lat", "hbs_cyr", etc.)
+- the following characters are escaped in text, titles, URLs and domains: `<, >, &, ', ''` (to satisfy XML rules). In attribute values double quotes and ampersands are escaped. In the text only angle brackets (`<` and `>`) are escaped.
+
+#### Domain-level
+
+Additional filtering:
+- porn (Slovene and HBS only): all domains for which more than 0.94% of texts in the domain have the ratio of paragraphs without punctuation per non-short paragraphs (non_punct/non_short_p) higher than 0.25%, with limitations applied that only the texts with more than 2 nonshort sentences are analysed, and only domains with more than 5 text are analysed. False positives were manually removed from the list of domains to be deleted.
+- manually annotated bad domains (Slovene and HBCS) from the list in `additional-documentation/SouthSlavic-bad-domains-list.txt`
+
+### Format preparation
+
+- add information on punctuation ratio in paragraphs: `wo_punct` added to paragraphs for which no. of punctuation per no. of words is less than 0.2
+- calculate lang_distr
+- add the metadata, listed below
+
+See [final-format.md](final-format.md) for details on the final files structure and attributes.
+
 
 ## Disclaimer
 The contents of this document are the sole responsibility of the members of the MaCoCu consortium, and do not necessarily reflect the opinion of the European Union.

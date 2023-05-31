@@ -1,0 +1,35 @@
+<!ELEMENT corpus (doc+)>
+<!-- Obligatory ID of the corpus, e.g., "MaCoCu-sl-2.0" for Slovene corpus. -->
+<!ATTLIST corpus id            CDATA #REQUIRED>
+<!-- One web page, consisting of one or more paragraphs. -->
+<!ELEMENT doc (p+)>
+<!-- ID of the document, e.g., "macocu.sl.1" -->
+<!ATTLIST doc id            CDATA #REQUIRED>
+<!-- Title of the web page, taken from the HTML format, e.g., "Veleposlaništvo Rusije v Sloveniji". -->
+<!ATTLIST doc title         CDATA #REQUIRED>
+<!-- Date, when the text was obtained from the web, e.g., "2022-07-01". -->
+<!ATTLIST doc crawl_date    CDATA #REQUIRED>
+<!-- Distribution of languages, identified on paragraph-level, e.g., [('mk', 0.66), ('ru', 0.34)], meaning 66% Macedonian, 34% Russian. Distribution is calculated based on the language identification of paragraphs that have @quality="good" or "good_wo_punct", because the language identification is not reliable enough on shorter paragraphs. -->
+<!ATTLIST doc lang_distr          CDATA #REQUIRED>
+<!-- URL of the website, from which the text was obtained, e.g., "https://www.a1.si/hbo" -->
+<!ATTLIST doc url           CDATA #REQUIRED>
+<!-- Domain, from which the text was obtained, e.g., "a1.si" -->
+<!ATTLIST doc domain          CDATA #REQUIRED>
+<!-- File type of the original document, e.g., "html", "txt", "pdf", "doc". -->
+<!ATTLIST doc file_type     CDATA #REQUIRED>
+<!-- Fluency score of paragraphs in the document, averaged and normalized by paragraph length. The score is between 0 and 1 and is based on the Monocleaner language model, e.g. 0.947. -->
+<!ATTLIST doc lm_score      CDATA #REQUIRED>
+<!-- One paragraph-like element. -->
+<!ELEMENT p (#PCDATA)>
+<!-- ID of the paragraph, e.g., "macocu.sl.24.7". -->
+<!ATTLIST p id           CDATA #REQUIRED>
+<!-- Information, obtained from the HTML structure, whether the paragraph is a heading. The attribute is present only if the paragraph is a heading and has a value "yes".  -->
+<!ATTLIST p heading         CDATA #IMPLIED>
+<!-- Estimated quality of the paragraph based on a heuristic taking into account multiple parameters (length, number of stopwords, link density, ratio of number of punctuation marks per number of words, etc.). Paragraphs with "bad" quality are filtered out, i.e. they do not appear in the corpus. Possible values: "good", "neargood", "short", "neargood_wo_punct", "good_wo_punct". -->
+<!ATTLIST p quality           CDATA #REQUIRED>
+<!-- The estimated language of the paragraph, e.g. "mk". Note that this attribute is missing for @quality="short", as the language here cannot be reliably estimated. -->
+<!ATTLIST p lang         CDATA #IMPLIED>
+<!-- Fluency score between 0 and 1, based on the Monocleaner language model, e.g. 0.947. -->
+<!ATTLIST p lm_score         CDATA #REQUIRED>
+<!-- Information whether the paragraph contains sensitive information, e.g. e-mails, phone numbers, IP addresses. Possible values are "yes" or "no". This information was identified via the Biroamer tool - https://github.com/bitextor/biroamer. -->
+<!ATTLIST p sensitive        CDATA #REQUIRED>
